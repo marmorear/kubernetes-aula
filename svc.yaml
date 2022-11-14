@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: svc-aula
+spec:
+  type: ClusterIP
+  selector:
+    app: pods-aula
+  ports:
+    - port: 80
+      targetPort: 80
